@@ -1,0 +1,140 @@
+﻿Detecting Flaws in Metal by Mapping Equipotentials on a Two-Dimensional Graphite Model
+C. Butash, E. Chen, J. Chin, J. Katz, G. Nealon, P. Rofman
+
+
+With the popularization of 3-D (three-dimensional) printed metals, the necessity for a method to detect internal flaws is increasing. We experimented with a 2-D (two-dimensional) graphite model of 3-D printed metal and measured the potential at various points throughout the model in a grid-like fashion. To simulate imperceptible flaws, we erased internal portions of the graphite and re-measured the potentials at the same points. Graphing our measurements, we created representations of nonlinear potential differences, allowing us to conclude that calculating potential in intervals over a conducting surface is a valid method to detect imperfections hidden within 3-D printed conducting surfaces under certain conditions.
+
+
+Introduction
+The electric potential of a particle can be described as the amount of electric potential energy per unit column of charge. This can be represented by the following equation:
+                        (1)     
+Where V is the potential difference that is represented by the integral of the electric field along a path, with the negative sign showing that electric potential will decrease in the direction of the field. Equipotential lines represent locations in an electric field where the potential is constant [1]. We want to decipher how an electric field will differ when given a vertical or a horizontal gap utilizing measured potential and Equation 1.
+We hypothesize that blemishes in metal can be detected by observing a nonlinear voltage difference across a conducting surface. Since electric fields run perpendicular to equipotentials we expect that in the solid graphite region, the equipotentials will be linear, and perpendicular to the electric field. We also expect that at all grid points in the region with a vertical flaw will have nonlinear equipotential lines that run horizontally and curve around the discontinuity. Finally, we expect that the region with a horizontal flaw will have relatively linear equipotential lines. As the grid points get closer to where the flaw is located, the equipotential lines for this region may begin to curve around the discontinuity. 
+To test these hypotheses, we set up an experiment to replicate, in two dimensions, the voltage across a conductive material: graphite. Our experiment models a block of metal as a graphite square on paper and flaws as erased portions. We conducted three trials: unflawed metal, metal with a vertical flaw, and metal with a horizontal flaw. 
+
+
+Methods and Materials
+Set Up
+To test our hypotheses, we used a ruler to measure a box with dimensions 50 mm by 50 mm on the corner of 8.5x11” printer paper and marked along the length and width of the box in increments of 10 mm. We then shaded the box as darkly and uniformly as possible with the graphite from a standard #2 pencil. Two paper clips were straightened, placed along opposite sides of the box, and attached to a 5V power supply containing four 1.25V Energizer batteries. The negative lead from the battery pack was wrapped around the paperclip at the top of the square, and the positive lead was wrapped around the paperclip at the bottom. We used masking tape to secure the wires and paper clips to the paper surface.  
+  
+
+Figure 1. Graphite square for control trial with grid
+
+Data Collection
+Using a multimeter, we measured the voltages with the negative probe on the negatively charged paper clip and the positive probe on the 10 mm mark—the leftmost edge of the graphite square. Keeping the negative probe in place, we moved the positive probe to the right along the graphite in increments of 10 mm until we reached the rightmost edge at 50 mm and recorded the resulting voltage. We repeated this across each row of 10 mm increments until we had voltage values for all intersections of 10 mm grid lines, depicted as light blue dots in Fig. 1.
+  
+
+Figure 2. Graphite square for trial with vertical flaw
+  
+
+Figure 3.  Graphite square for trial with horizontal flaw
+
+
+To mimic flaws in the metal, we erased a vertical line halfway through the box, spanning a length of 45 mm and a width of approximately 5 mm, as shown in Fig. 2. We repeated the aforementioned experimental process to record the voltage throughout the box in the same grid-like fashion. 
+Then, we moved the paperclips to the two other sides of the box, causing the same erased “flaw” to be horizontal, as shown in Fig. 3, and repeated the process of measuring the voltage throughout the box in the same grid-like fashion.
+
+
+
+
+Results
+In our first experiment with a solid region, we had a fairly linear voltage difference across the graphite square. This is to be expected as the region is continuous, allowing the electric field to remain constant and the equipotential lines to be evenly spaced.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 4. Potential difference across the control grid
+
+
+In the region with a horizontal flaw, we had a horizontal, linear voltage difference along the sides of the square with a center voltage of zero. The graph of the potential difference (Fig. 5) highlights the zero measured voltage in the region where the flaw is located.
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 5. Potential difference across the horizontally flawed grid
+
+
+In the region with a vertical flaw, we had a vertical, linear voltage difference along the sides of the square with a center voltage of zero. The graph of the potential difference (Fig. 6), however, fails to  highlight the zero measured voltage in the region where the flaw is located. 
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Figure 6. Potential difference across the vertically flawed grid
+
+
+Discussion
+Did the flaw cause a predictable effect on the measured potential values?
+In this experiment, we successfully measured and mapped potential values across flawed and unflawed graphite squares to mimic flawed and unflawed 3-D printed metals. The voltage measurements change smoothly throughout the graphite squares, except when the measurements near the gaps.
+Comparing the graphs of the potential difference, however, shows that only the vertically flawed trial produced a graph visibly different from the control trial. Fig 5. and Fig 6. show how the orientation of the flaw affects the calculated potential differences over the region. The potential with the horizontally flawed trial drops significantly after the flaw, as the imperfection in the surface increases resistance and, in turn, leads to a reduced voltage. 
+
+
+Can we generalize our findings to find flaws in 3D printed metal?
+        Similarly to our 2-D model, defects in 3-D printed metal will also cause varying paths in the electric field. Our findings lead us to believe that electrical testing can be generalized to identify if a 3-D printed conductor has flaws that are not visible on the surface. In a similar manner to the 2-D experiment, a 3D object can have a voltage source connected across it and have its voltage measured at varying points. Analysis of the voltage will find flaws located where there are abrupt changes. However, these items have an entirely new dimension introduced where the electric field lines can stray, meaning that it may be more difficult to identify these imperfections using potential than in 2-D due to the increased number of data points that would need to be collected to form an adequate grid. Furthermore, we believe that the difficulties we faced identifying flaws in different orientations in the 2-D model will be amplified. 
+
+
+Sources of experimental error
+        Inconsistent application of graphite to the box could change the resistance, where a thicker graphite patch would have a lower resistance and a thinner graphite patch would have a higher resistance, ultimately resulting in the voltage drop not being perfectly linear. Additionally, if the line wasn’t perfectly erased, some current could still cross the remaining graphite, causing variations in the measured voltage. A last possible source of experimental error could be due to taking voltage measurements at inaccurate grid points; when eyeballing the grid points, the measurements may be slightly off their intended marks.
+
+
+Acknowledgments 
+Bibliography 
+[1] Georgia State University, Department of Physics and Astronomy (n.d.). Equipotential Lines. Hyper Physics. http://hyperphysics.phy-astr.gsu.edu/hbase/electric/equipot.html  
+
+
+Contributions 
+        CB created the figures for lab setup, wrote the Discussion section and developed the Methods and Materials before the experiment. EC created the line charts for the results and wrote portions of the Introduction, Results, and Sources of Experimental Error sections.  JC wrote portions of the Introduction, abstract, and Methods and Materials section. JK followed instructions by assisting and gathering measurements for the first trial and taking over for the other two. GN set up the experiment and took measurements for the first trials. She also crafted the Results section and worked on the Introduction. PR wrote the Methods and Materials section, as well as part of the abstract, Results, and Discussion sections. All members were able to help others with writing, revising, and discussing data to formulate conclusions.
