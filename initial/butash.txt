@@ -1,0 +1,6 @@
+1. This is a review of the manuscript "Detecting flaws in metal by mapping equipotentials on a 2d graphite model" by Butash, Chen, Chin, Katz, Nealon, and Rofman. I recommend minor revisions. The manuscript uses a simple physical model system (graphite on paper) to examine equipotentials and electric field in a 2D domain with or without a crack or flaw, with end application in non destructive testing of 3D printed materials. 
+
+2. There are minor changes in the markup. Model or source of key equipment like the multimeter or the pencils should be included.
+
+3. The data are provided as slices along the X axis at different y values. The authors should provide this data as a map such as a 2D plot with either contourlines or colormapped to show the equipotentials as well as the location of the crack and the electric field lines. It would also help if the raw data to make the plots and the code were provided as a github repository.
+
